@@ -1,0 +1,215 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Form Container Styling */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input, Textarea, and Select Styling */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Button Styling */
+button {
+    background-color: #2da94a;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Error Message Styling */
+.error {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+/* Radio Group Styling */
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 8px;
+}
+
+/* Radio Button Label Styling */
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Radio Button Input Styling */
+.radio-group input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.2); /* Slightly enlarges the radio button for better visibility */
+    accent-color: #4CAF50; /* Changes the color of the selected radio button */
+}
+
+/* Button Container Styling */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Donate and Submit Button Styling */
+.donate-btn, .submit-btn {
+    max-width: 300px;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet screens (landscape orientation) */
+@media (max-width: 768px) {
+    .radio-group {
+        gap: 10px;
+        flex-direction: row; /* Align radio buttons horizontally */
+    }
+
+    .form-group, .button-container {
+        margin-bottom: 15px;
+    }
+
+    .donate-btn, .submit-btn {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* Mobile screens (portrait orientation) */
+@media (max-width: 425px) {
+    .radio-group {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+        gap: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, textarea, select, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .radio-group label {
+        font-size: 14px;
+    }
+
+    .radio-group input[type="radio"] {
+        transform: scale(1.1);
+    }
+}
+
+/* Specific Adjustments for 375px Screens */
+@media (max-width: 375px) {
+    .radio-group {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+        gap: 5px;
+    }
+}
+
+/* Specific Adjustments for 325px Screens */
+@media (max-width: 325px) {
+    .radio-group {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+        gap: 2px;
+    }
+}
+.submit-btn a {
+    text-decoration: none;
+    color: white
+}
+
+
+
+
+.back-to-home {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #0662ed; /* Dark blue background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-home:hover {
+    background-color: #557bb1; /* Lighter blue on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+@media (max-width: 768px) {
+    .back-to-home {
+        font-size: 14px;
+        padding: 8px 16px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .back-to-home {
+        font-size: 12px;
+        padding: 6px 12px;
+        right: 5px;
+    }
+}
